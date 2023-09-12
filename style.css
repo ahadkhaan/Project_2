@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+ .left{
+    width: 35%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-around;
+padding: 30px 0;
+font-size: 17px;
+
+}
+.nav a{
+    text-decoration: none;
+    color: #000;
+    opacity: .6;
+}
+.nav i{
+    color: rgb(86, 182, 213);
+}
+ 
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.content h1{
+    font-size: 80px;
+    font-weight: 900;
+    /* line-height: 2px; */
+    margin-bottom: 20px;
+}
+
+.content p{
+opacity: .6;
+font-size: 20px;
+}
+/* .content a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid black;
+   
+    font-size: 17px;
+    padding-bottom: 2px;
+    opacity: 0.7;
+    margin: 20px 0;
+} */
+ .right{
+    width: 65%;
+    height: 100%;
+  
+}
+
+.rtop{
+    height: 50%;
+    width: 100%;
+    background-color: violet;
+    display: flex;
+}
+.rtopl{
+    height:100% ;
+    width: 50%;
+    /* background-color: turquoise; */
+    background-image: url(https://img.freepik.com/free-photo/top-view-sliced-citruses-grapefruits-oranges-lemons-blue-desk-citrus-fruit-juice_140725-25162.jpg?w=740&t=st=1694531074~exp=1694531674~hmac=2c924b14f8af517fc9a6b1748a2120e62c7ee73ada00b248a67cc19a40ec14c6);
+    background-position: center;
+    background-size: cover;
+
+}
+.rtopr{
+    height:100% ;
+    width: 50%;
+    /* background-color: rgb(39, 193, 87); */
+    background-image: url(https://img.freepik.com/free-photo/top-view-package-with-popcorn-spread-all_140725-22504.jpg?w=740&t=st=1694531171~exp=1694531771~hmac=415622b968977f2fa980961e2e8b50b74282c8fd620881cce1da32f1d71657ba);
+    background-size: cover;
+}
+.rbottom{
+height: 50%;
+width: 100%;
+/* background-color: aqua; */
+background-image: url(https://cdn.pixabay.com/photo/2016/06/08/15/45/lemon-1444025_1280.jpg);
+background-size:cover;
+background-position:top;
+}
+
+
+/* Responsiveness queries */
+
+@media (max-width:700px) {
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .content h1{
+        font-size: 60px;
+    }
+    .content p{
+        font-size: 15px;
+    }
+    .rbottom{
+        height: 50%;
+        width: 100%;
+        /* background-color: aqua; */
+        background-image: url(https://cdn.pixabay.com/photo/2016/06/08/15/45/lemon-1444025_1280.jpg);
+        background-size:cover;
+        background-position:center;
+        }
+
+    .right{
+        width: 100%;
+    }
+}
